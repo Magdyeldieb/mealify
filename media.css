@@ -1,0 +1,165 @@
+
+
+@media screen and (max-width:1200px) {
+    .header .nav{
+        display: none;
+    }
+.icon-responsive{
+    display: flex;
+}
+#toogle{
+    margin-right: 10px;
+}
+body:has(#toggle:checked) .responsive-close {
+    color:#fff;
+}
+body > div.header > ul.nav-responsive > div.responsive-close > label > i{
+    color: #000;
+}
+    .nav-responsive,.icon-responsive{
+        display: block;
+    }
+    
+    .header .nav-responsive {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 40%;
+        height: 100vh;
+        transition: all 0.5s;
+    
+    
+    }
+    
+    .header .nav-responsive .responsive-links {
+        margin-top: 50px;
+    
+    
+    }
+    
+    .header .nav-responsive .responsive-links li {
+        margin-bottom: 25px;
+        margin-left: 10px;
+    
+    
+    }
+    
+    .header .nav-responsive .responsive-links li a {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 24px;
+        transition: all 0.5s;
+    
+    }
+    
+    .header .nav-responsive .responsive-close {
+        margin: 10px;
+        cursor: pointer;
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.5);
+        transition: all 0.5s;
+    }
+    
+    .header .nav-responsive .responsive-links li a:hover,
+    .header .nav-responsive .responsive-close:hover {
+        color: #000;
+    
+    
+    }
+    
+    
+    .header .icon-responsive {
+        font-size: 30px;
+    }
+    
+    body:has(#bars:checked) .header .nav-responsive {
+        right: 0;
+    }
+    
+    body:target .header .nav-responsive {
+        display: none;
+    }
+    
+    
+    .child-body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ffffff6e;
+    
+    
+    }
+    
+    body:has(#bars:checked) .child-body {
+        width: 100%;
+        z-index: 999;
+    }
+    
+}
+@media screen  and (max-width:992px){
+    .section-header .container{
+flex-direction: column;
+    }
+    .section-header .image, .section-header .content {
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+    .section-header .content p ,.section-header .icons{
+    margin: auto;
+    margin-bottom: 10px;
+    }
+    
+    .section-header .image{
+width: 100%;
+order: 1;
+    }
+    .chef .conatiner{
+        flex-wrap: wrap;
+    }
+    .chef .conatiner .card {
+        width: 45%;
+    }
+    .gallery .b .image1{
+display: none;
+    }
+    .gallery{
+text-align: center;
+    }
+    .gallery .b .layer {
+left: 10%;
+    }
+    .contact .parent-icon{
+        flex-direction: column;
+    }
+.footer .conatiner{
+    flex-direction: column;
+}
+}
+
+
+@media screen and (max-width:767px) {
+  
+    .chef .conatiner{
+        flex-wrap: wrap;
+    }
+    .chef .conatiner .card {
+        width: 100%;
+    }
+    .gallery .b {
+      flex-direction: column;
+            }
+            .section-header .icons{
+                width: 70%;
+            }
+            .gallery{
+                padding: 10px;
+            }
+            .contact{
+                padding: 10px;
+            }
+}
